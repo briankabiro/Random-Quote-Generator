@@ -1,0 +1,1 @@
+/*Get json data of quotes, connect with socket.io, on-button click, read the next one */

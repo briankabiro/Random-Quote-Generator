@@ -1,0 +1,22 @@
+.container{
+	background-color: orange;
+	height:98vh;
+	display: flex;
+}
+#quote-box{
+	background-color: white;
+	height:22vh;
+	width:22vw;
+	display:flex;
+	margin:auto;
+	flex-direction: column;
+}
+#quote-box p{
+	padding:0.5em;
+}
+button{
+	width:5em;
+	height:20px;
+	align-self: flex-end;
+	margin-right: 3em;
+}
