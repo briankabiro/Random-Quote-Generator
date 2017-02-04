@@ -5,13 +5,18 @@
 }
 #quote-box{
 	background-color: white;
-	height:22vh;
-	width:22vw;
+	height:30vh;
+	width:30vw;
 	display:flex;
 	margin:auto;
 	flex-direction: column;
 }
-#quote-box p{
+#quote-content{
+	padding:0.5em;
+	font-family:Arial;
+}
+#quote-author{
+	font-family: cursive;
 	padding:0.5em;
 }
 button{

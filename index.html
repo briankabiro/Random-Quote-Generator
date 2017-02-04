@@ -9,13 +9,25 @@
 	<body>
 		<div class='container'>
 			<div id="quote-box">
-				<p>The best time to plant a tree was 20 years ago. The second best time is now.
-				<br><br>Chinese Proverb</p>
+				<p id="quote-content"></p>
+				<span id="quote-author"></span>
 				<button>Next</button>
 			</div>
+			<div id="data">
+			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script>
-			
+		$("button").on('click',function(e){
+			e.preventDefault();
+			var url = 'http://quotesondesign.com/api/3.0/api-3.0.json?callback=?';
+			$.getJSON(url, function(response){
+				var author = response.author;
+				var quote = response.quote;
+				$("#quote-content").text(response.quote);
+				$("#quote-author").text(response.author);
+			})
+		});
 		</script>
 	</body>
 </html>
