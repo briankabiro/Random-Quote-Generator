@@ -26,6 +26,8 @@
 				var quote = response.quote;
 				$("#quote-content").text(response.quote);
 				$("#quote-author").text(response.author);
+				var color = '#'+Math.random().toString(16).substr(-6);
+				$('.container').css({"background-color":color}) 
 			})
 		});
 		</script>
